@@ -239,39 +239,4 @@ client.on("message", function(message) {
                .setColor(reponse8)
            message.channel.sendEmbed(ballembed)
                break;
-               case "Akiix":
-           let tte = argsed.join(" ")
-           if (!tte){
-               return message.reply("**hmmm...Je crois que ta oublier la question** :yum: ")};
-
-                        var replys8 = [
-                            '#F407FC', 
-                            '#034EEF',
-                            '#09F4D1',
-                            '#09F14E',
-                            '#E7EF07',
-                            '#F5A718',
-                            '#FB4B06',
-                            '#FB2702',
-                            '#F6F4F3',
-                            '#201F1F'
-                        ];
-                    
-                        let reponse8 = (replys8[Math.floor(Math.random() * replys8.length)])
-    
-               var replys = [
-               "Oui.",
-               "Non.",
-               "Je ne sais pas.",
-               "Peut-être.",
-               "Probablement."
-               ];
-           
-               let reponse = (replys[Math.floor(Math.random() * replys.length)])
-               var ballembed = new Discord.RichEmbed()
-               .setDescription("Akiix :heart: :black_joker: ")
-               .addField("Question", tte)
-               .addField("Réponse", reponse)
-               .setColor(reponse8)
-           message.channel.sendEmbed(ballembed)
             }});
