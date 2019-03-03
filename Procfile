@@ -1,1 +1,1 @@
-worker: node Akiina.js
+worker: node Akiix.js
