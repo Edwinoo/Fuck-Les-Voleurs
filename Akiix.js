@@ -78,7 +78,7 @@ client.on("message", message => {
         let embed = new Discord.RichEmbed()
         .setColor('#00FFFF')
         .setTitle("Invite moi")
-        .addField(" 📋 Pour m'ajouter a ton discord ", "[Cliquez ici](https://discordapp.com/api/oauth2/authorize?client_id=441314766720598036&scope=bot&permissions=66321471)", true)
+        .addField(" 📋 Pour m'ajouter a ton discord ", "[Cliquez ici](https://discordapp.com/oauth2/authorize?client_id=551720439299178506&scope=bot&permissions=66321471)", true)
         .setFooter(`Réclamé par ${message.author.tag} | By Edwin `)
         .setTimestamp()
         message.channel.send({embed})
