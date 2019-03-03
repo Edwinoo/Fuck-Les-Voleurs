@@ -6,8 +6,8 @@ var prefix = ("<")
 client.login(process.env.TOKEN);
 
 const activities_list = [
-    "<Aide | By Edwin [V4.7]",
-    "<Aide | By Edwin [V4.7]",
+    "<Aide | By Edwin [V1.0]",
+    "<Aide | By Edwin [V1.0]",
     "Discord ► https://discord.gg/dehgnGp"
     ];
 
