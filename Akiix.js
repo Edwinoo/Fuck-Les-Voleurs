@@ -21,46 +21,51 @@ client.on('ready', () => {
 client.on("message", message => {
     if(message.content.startsWith(prefix + "aide") || message.content.startsWith(prefix + "Aide")) {
         let embed = new Discord.RichEmbed()
-        .setColor('#FFFF00')
+        .setColor('#0080FF')
         .setTitle("__Voici la liste des commandes__:")
         .setThumbnail(message.author.avatarURL)
-        .setDescription("__**DIVERS**__ : \n" +
-            " `<support` : *Te donne le serveur de mon créateur.* \n" +
-            " `<invite` : *Te donne un lien pour m'invité;* \n" +
-            " `<dhelp` : *Te donne les commande en direct.* \n" )
+        .setDescription("**Info** : \n" +
+            " Si une commande contient {...}, cela signifie que c'est un argument optionnel. \n" )
       message.author.send({embed});
       message.reply(" 📧 Regarde tes messages !");
       }
 
       if(message.content.startsWith(prefix + "aide") || message.content.startsWith(prefix + "Aide")) {
         let embed = new Discord.RichEmbed()
-        .setColor('#FF8000')
-        .setDescription("__**MODERATION**__ : \n" +
-            " `<kick (@user)` : *Pour kick un joueur*(PARFOIS BUG)\n" +
-            " `<ban (@user)` : *Pour ban une personne*(PARFOIS BUG)\n" +
-            " `<say` : *Pour envoyer un message au nom du bot*\n" +
-            " `<clear + Nombre` : *Pour supprimer des messages.*\n" )
+        .setColor('#0080FF')
+        .setDescription("__**Commandes Admin:**__ \n" +
+            " ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n" +
+            " **<kick {@user}** \n" +
+            " Pour expulser un utilisateur du serveur. \n" +
+            " **<ban {@user}** \n" +
+            " Pour bannir un utilisateur du serveur. \n" +
+            " **<say {message}** \n" +
+            " Pour envoyer un message au nom du bot. \n" +
+            " **<clear {1 - 99}** \n" +
+            " Supprimer les messages d'un salon textuel.\n" +
+            " **<sondage ** \n" +
+            " Créer ton Sondage.\n" +
+            " ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n" )
       message.author.send({embed});
       }
 
       if(message.content.startsWith(prefix + "aide") || message.content.startsWith(prefix + "Aide")) {
       let embed = new Discord.RichEmbed()
-      .setColor('#00FFFF')
-      .setDescription("__**FUN**__ : \n" +
-      " `<avatar (@user)` : *Montre l'avatar d'une personne*\n" +
-      " `<sondage` : *Créer ton Sondage*\n" +
-      " `<8ball` : *Pose des question et Akiina repond*\n" )
-      message.author.send({embed});
-      }
-
-      if(message.content.startsWith(prefix + "aide") || message.content.startsWith(prefix + "Aide")) {
-        let embed = new Discord.RichEmbed()
-        .setColor('#00FF00')
-        .setDescription("__**INFORMATION**__ : \n" +
-        "**[[Mon Steam]](https://steamcommunity.com/id/Fharze)**\n" +
-        "**[Ma Chaine YouTube] PAS ENCORE**\n" )
-        .setFooter(`Réclamé par ${message.author.tag} | @Edωɨה#5292 `)
-        .setTimestamp()
+      .setColor('#0080FF')
+      .setDescription("__**Commandes par défaut:**__ \n" +
+      " ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n" +
+      " **<avatar {@user}** \n" +
+      " Montre l'avatar d'une personne. \n" +
+      " **<8ball** \n" +
+      " Pose des question et Akiix te repond. \n" +
+      " ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n" +
+      " **<support** \n" +
+      " Te donne le serveur de mon créateur. \n" +
+      " **<invite** \n" +
+      " Te donne mon lien d'invitation. \n" +
+      " **<dhelp** \n" +
+      " Te donne les commande en direct dans un salon textuel. \n" +
+      " ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n" )
       message.author.send({embed});
       }
 
