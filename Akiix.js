@@ -240,7 +240,6 @@ client.on("message", function(message) {
            message.channel.sendEmbed(ballembed)
                break;
                case "Akiix":
-           let argsed = message.content.split(" ").slice(1);
            let tte = argsed.join(" ")
            if (!tte){
                return message.reply("**hmmm...Je crois que ta oublier la question** :yum: ")};
