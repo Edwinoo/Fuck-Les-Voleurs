@@ -80,8 +80,8 @@ client.on("message", message => {
     }
     
     if (message.content === "TAGUEUL"){
-        message.channel.sendMessage("TU PARLE QUI TOI, TU VEUT J'TE BZ OU QUOI !;)");
-        console.log("JE T'AIMEUH !");
+        message.channel.sendMessage("TU PARLE A QUI TOI, TU VEUT J'TE BZ OU QUOI !;)");
+        console.log("TAGUEUL !");
     }
 
     if(message.content.startsWith(prefix + "invite") || message.content.startsWith(prefix + "Invite")) {
