@@ -70,17 +70,17 @@ client.on("message", message => {
       }
 
     if (message.content === "<support"){
-        message.channel.sendMessage("bah enfaite... j'ai pas de Discord ;)");
+        message.channel.sendMessage("GO => [ https://discord.gg/dehgnGp ] !)");
         console.log("Commande Support effectué");
     }
     
     if (message.content === "JE T'AIMEUH"){
-        message.channel.sendMessage("TAGUEUL ! y'a prs qui t'aime toi ! ;)");
+        message.channel.sendMessage("TAGUEUL ! y'a prs qui t'aime toi !");
         console.log("JE T'AIMEUH !");
     }
     
     if (message.content === "TAGUEUL"){
-        message.channel.sendMessage("TU PARLE A QUI TOI, TU VEUT J'TE BZ OU QUOI !;)");
+        message.channel.sendMessage("TU PARLE A QUI TOI, TU VEUT J'TE BZ OU QUOI !");
         console.log("TAGUEUL !");
     }
 
