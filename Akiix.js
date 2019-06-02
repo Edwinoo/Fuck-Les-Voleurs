@@ -73,6 +73,11 @@ client.on("message", message => {
         message.channel.sendMessage("bah enfaite... j'ai pas de Discord ;)");
         console.log("Commande Support effectué");
     }
+    
+    if (message.content === "JE T'AIMEUH"){
+        message.channel.sendMessage("TAGUEUL ! y'a prs qui t'aime toi ! ;)");
+        console.log("JE T'AIMEUH !");
+    }
 
     if(message.content.startsWith(prefix + "invite") || message.content.startsWith(prefix + "Invite")) {
         let embed = new Discord.RichEmbed()
