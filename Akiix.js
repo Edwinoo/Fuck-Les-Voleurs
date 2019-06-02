@@ -78,6 +78,11 @@ client.on("message", message => {
         message.channel.sendMessage("TAGUEUL ! y'a prs qui t'aime toi ! ;)");
         console.log("JE T'AIMEUH !");
     }
+    
+    if (message.content === "TAGUEUL"){
+        message.channel.sendMessage("TU PARLE QUI TOI, TU VEUT J'TE BZ OU QUOI !;)");
+        console.log("JE T'AIMEUH !");
+    }
 
     if(message.content.startsWith(prefix + "invite") || message.content.startsWith(prefix + "Invite")) {
         let embed = new Discord.RichEmbed()
