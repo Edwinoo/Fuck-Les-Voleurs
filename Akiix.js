@@ -35,10 +35,6 @@ client.on("message", message => {
         .setColor('#0080FF')
         .setDescription("__**Commandes Admin:**__ \n" +
             " ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n" +
-            " **<kick {@user}** \n" +
-            " Pour expulser un utilisateur du serveur. \n" +
-            " **<ban {@user}** \n" +
-            " Pour bannir un utilisateur du serveur. \n" +
             " **<say {message}** \n" +
             " Pour envoyer un message au nom du bot. \n" +
             " **<clear {1 - 99}** \n" +
@@ -72,16 +68,6 @@ client.on("message", message => {
     if (message.content === "<support"){
         message.channel.sendMessage("GO => [ https://discord.gg/dehgnGp ] !)");
         console.log("Commande Support effectué");
-    }
-    
-    if (message.content === "JE T'AIMEUH"){
-        message.channel.sendMessage("TAGUEUL ! y'a prs qui t'aime toi !");
-        console.log("JE T'AIMEUH !");
-    }
-    
-    if (message.content === "TAGUEUL"){
-        message.channel.sendMessage("TU PARLE A QUI TOI, TU VEUT J'TE BZ OU QUOI !");
-        console.log("TAGUEUL !");
     }
 
     if(message.content.startsWith(prefix + "invite") || message.content.startsWith(prefix + "Invite")) {
@@ -156,41 +142,6 @@ client.on("message", function(message) {
                 }
             message.channel.send("", {embed})
             break;
-               case "kick":
-           let command = message.content.split(" ")[0];
-           const args = message.content.slice(prefix.length).split(/ +/);
-           command = args.shift().toLowerCase();
-    
-               if(!message.member.hasPermission("KICK_MEMBERS")) {
-                   return message.reply("❌ **hep hep, Ta pas les perms !**").catch(console.error);
-               }
-               if(message.mentions.users.size === 0) {
-                   return message.reply("**Merci de mentionner l'utilisateur à expulser.**").catch(console.error);
-               }
-               let kickMember = message.guild.member(message.mentions.users.first());
-               if(!kickMember) {
-                   return message.reply("**Cet utilisateur est introuvable ou impossible à expulser.**")
-               }
-               if(!message.guild.member(bot.user).hasPermission("KICK_MEMBERS")) {
-                   return message.reply("**Je n'ai pas la permission KICK_MEMBERS pour faire ceci.**").catch(console.error);
-               }
-               kickMember.kick().then(member => {
-                   message.reply(" ✅ " + member.displayName + " **Je les dégager mais fait gaf il peut revenir.** :wave: ").catch(console.error);
-               }).catch(console.error)
-           break;
-           case "ban":
-           let commande = message.content.split(" ")[0];
-           const argse = message.content.slice(prefix.length).split(/ +/);
-           commande = argse.shift().toLowerCase();
-           if(!message.member.hasPermission("BAN_MEMBERS")) {
-               return message.reply("❌ **hep hep, Ta pas les perms !**").catch(console.error);
-           }
-           const member = message.mentions.members.first();
-           if (!member) return message.reply("**Merci de mentionner l'utilisateur à bannir.**");
-           member.ban().then(member => {
-               message.reply(" ✅ " + member.displayName + " **C'est bon, il reviendra plus.** :wave: ").catch(console.error);
-           }).catch(console.error)
-           break;
            case "sondage":
            if (message.member.hasPermission("MANAGE_MESSAGES")) {
                let args = message.content.split(" ").slice(1);
