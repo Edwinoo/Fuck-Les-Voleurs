@@ -84,7 +84,7 @@ client.on("message", message => {
         let embed = new Discord.RichEmbed()
             .setDescription(`${message.author.username}, Voici la liste des commandes:`)
             .addField('DIVERS:' , "` <support \n<invite \n<dhelp `")
-            .addField(`MODERATION:` , "` <ban \n<kick \n<say \n<clear`")
+            .addField(`MODERATION:` , "` <say \n<clear`")
             .addField('FUN:' , "'<avatar \n<sondage \n<8ball'" ) 
             .setTimestamp()
             .setColor("0x00FF00")
