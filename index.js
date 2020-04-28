@@ -372,4 +372,4 @@ client.on('message', message => {
 });
 
 // login to Discord with your app's token
-client.login(NTUxNzIwNDM5Mjk5MTc4NTA2.XqiUUw.7DUCbfW7KJkb1y7nhZhf05_yB6E);
+cclient.login(process.env.TOKEN);
